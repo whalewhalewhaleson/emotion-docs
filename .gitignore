@@ -9,3 +9,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# local planning docs — this repo is public, plans stay local
+SPEC.md
+PLAN.md
