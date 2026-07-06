@@ -1,6 +1,6 @@
 ---
 title: Authentication & Access
-description: Telegram as your identity layer: Login Widget, Mini App initData, allowlists, and revocation.
+description: "Telegram as your identity layer: Login Widget, Mini App initData, allowlists, and revocation."
 publish: true
 ---
 
