@@ -1,5 +1,6 @@
 {
   "framework": null,
+  "cleanUrls": true,
   "installCommand": "npm i",
   "buildCommand": "npx quartz build",
   "outputDirectory": "public",
