@@ -1,6 +1,6 @@
 ---
 title: "Promotchi: Kind Accountability for a Field Team"
-description: A gamified Telegram bot for retail promoters: submit on time, earn treats, feed a pet, and turn store updates into usable intelligence.
+description: "A gamified Telegram bot for retail promoters: submit on time, earn treats, feed a pet, and turn store updates into usable intelligence."
 publish: true
 ---
 
