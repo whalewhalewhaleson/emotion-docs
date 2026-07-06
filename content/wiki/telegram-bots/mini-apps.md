@@ -1,7 +1,7 @@
 ---
 title: Mini Apps
 description: Deep links, cross-surface sync, authenticated media, and the sharp edges of Telegram's in-app webview.
-publish: false
+publish: true
 ---
 
 # Mini Apps

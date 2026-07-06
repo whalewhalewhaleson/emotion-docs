@@ -1,7 +1,7 @@
 ---
 title: Running in Production
 description: Deploy gotchas, the pitfalls that bite every new bot, and how to architect scheduled AI consumers around Telegram's one-consumer rule.
-publish: false
+publish: true
 ---
 
 # Running in Production

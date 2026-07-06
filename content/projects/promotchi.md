@@ -1,7 +1,7 @@
 ---
 title: "Promotchi: Kind Accountability for a Field Team"
 description: A gamified Telegram bot for retail promoters — submit availabilities and store updates on time, earn treats, grow a pet. Accountability without surveillance.
-publish: false
+publish: true
 ---
 
 # Promotchi

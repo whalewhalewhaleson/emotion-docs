@@ -1,7 +1,7 @@
 ---
 title: Authentication & Access
 description: Telegram as your identity layer — Login Widget for browsers, initData for Mini Apps — and the access-control flows around it.
-publish: false
+publish: true
 ---
 
 # Authentication & Access

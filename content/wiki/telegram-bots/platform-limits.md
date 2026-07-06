@@ -1,7 +1,7 @@
 ---
 title: Platform Limits
 description: Telegram's cliff edges — file caps, message lengths, markdown traps, and restrictions that only fail at runtime, often silently.
-publish: false
+publish: true
 ---
 
 # Platform Limits

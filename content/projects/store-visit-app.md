@@ -1,7 +1,7 @@
 ---
 title: "Store Visit App: Field Reports That Nobody Has to Chase"
 description: A Telegram-native store visit tool that freed channel managers from admin — and an AI layer that reads every visit so nothing they notice slips away.
-publish: false
+publish: true
 ---
 
 # Store Visit App

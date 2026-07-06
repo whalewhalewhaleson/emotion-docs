@@ -1,7 +1,7 @@
 ---
 title: About
 description: Who is behind this site and why it exists.
-publish: false
+publish: true
 ---
 
 # About

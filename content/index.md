@@ -1,7 +1,7 @@
 ---
 title: Show Your Work
 description: The AI tools we built for TC Acoustic, and everything we learned building them.
-publish: false
+publish: true
 ---
 
 # Show Your Work

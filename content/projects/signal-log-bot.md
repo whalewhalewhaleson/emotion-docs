@@ -1,7 +1,7 @@
 ---
 title: "Signal Log Bot: Making Firefighting Visible"
 description: One free-text Telegram message to log a workflow disruption; weekly AI intelligence clusters the patterns so recurring problems stop hiding.
-publish: false
+publish: true
 ---
 
 # Signal Log Bot

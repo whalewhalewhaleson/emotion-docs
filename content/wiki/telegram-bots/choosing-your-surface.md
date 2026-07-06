@@ -1,7 +1,7 @@
 ---
 title: Choosing Your Surface
 description: Bot chat, Mini App, or web dashboard — match the surface to the cognitive mode of the task.
-publish: false
+publish: true
 ---
 
 # Choosing Your Surface

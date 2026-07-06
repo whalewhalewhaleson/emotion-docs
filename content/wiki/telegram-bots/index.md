@@ -1,7 +1,7 @@
 ---
 title: Telegram Bot Engineering
 description: Everything we've learned shipping production Telegram bots for business operations — surfaces, auth, platform limits, conversation design, and reliability.
-publish: false
+publish: true
 ---
 
 # Telegram Bot Engineering

@@ -1,7 +1,7 @@
 ---
 title: "CultivAIte: A Culture Campaign That Runs Itself"
 description: A quarterly reflection campaign rebuilt as a Telegram bot — weekly reflections, automated peer recognition, and a company garden that grows with participation.
-publish: false
+publish: true
 ---
 
 # CultivAIte
