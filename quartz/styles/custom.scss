@@ -1,11 +1,7 @@
 @use "./base.scss";
 
 .page article {
-  --panel: color-mix(in srgb, var(--light) 88%, var(--secondary) 12%);
-  --panel-border: color-mix(in srgb, var(--secondary) 24%, transparent);
-  --ink-soft: color-mix(in srgb, var(--darkgray) 72%, var(--gray));
-
-  line-height: 1.58;
+  line-height: 1.62;
 
   > h1 {
     margin-bottom: 1rem;
@@ -13,234 +9,20 @@
   }
 
   > h2 {
-    margin-top: 2.3rem;
-    margin-bottom: 0.7rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0.65rem;
     font-size: 1.25rem;
   }
 
   > p {
-    margin: 0.7rem 0;
-  }
-
-  > ul {
-    margin-top: 0.6rem;
+    margin: 0.75rem 0;
   }
 
   li {
-    margin: 0.25rem 0;
+    margin: 0.22rem 0;
   }
 
   table {
     font-size: 0.94rem;
-  }
-}
-
-.hero-panel {
-  margin: 0.2rem 0 1.4rem;
-  padding: 1.15rem 1.25rem;
-  border: 1px solid var(--panel-border);
-  border-left: 5px solid var(--secondary);
-  border-radius: 8px;
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--secondary) 10%, transparent), transparent 42%),
-    var(--panel);
-
-  &.compact {
-    padding-block: 1rem;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .kicker {
-    color: var(--secondary);
-    font-size: 0.83rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-
-  .hero-copy {
-    margin-top: 0.45rem;
-    color: var(--dark);
-    font-size: 1.2rem;
-    line-height: 1.42;
-  }
-}
-
-.signal-grid,
-.split-grid,
-.metric-strip,
-.principle-list,
-.flow-row,
-.compact-links {
-  margin: 1rem 0 1.35rem;
-}
-
-.signal-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-.signal-card {
-  display: flex;
-  min-height: 8.4rem;
-  flex-direction: column;
-  gap: 0.35rem;
-  justify-content: space-between;
-  padding: 0.95rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--light) 88%, white 12%);
-  color: var(--darkgray);
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--dark) 7%, transparent);
-
-  &:hover {
-    border-color: var(--secondary);
-    color: var(--darkgray);
-    transform: translateY(-1px);
-  }
-
-  strong {
-    color: var(--dark);
-    font-size: 1.08rem;
-  }
-
-  span:last-child {
-    color: var(--ink-soft);
-    font-weight: 400;
-    line-height: 1.35;
-  }
-}
-
-.eyebrow {
-  color: var(--tertiary);
-  font-size: 0.76rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.metric-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7.6rem, 1fr));
-  gap: 0.55rem;
-
-  div {
-    padding: 0.85rem;
-    border: 1px solid var(--lightgray);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--tertiary) 10%, transparent);
-  }
-
-  strong,
-  span {
-    display: block;
-  }
-
-  strong {
-    color: var(--dark);
-    font-size: 1.25rem;
-    line-height: 1.1;
-  }
-
-  span {
-    margin-top: 0.25rem;
-    color: var(--ink-soft);
-    font-size: 0.88rem;
-    line-height: 1.25;
-  }
-}
-
-.split-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-
-  > div {
-    padding: 0.9rem;
-    border-top: 3px solid var(--tertiary);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--lightgray) 32%, transparent);
-  }
-
-  h3 {
-    margin: 0 0 0.35rem;
-    color: var(--dark);
-    font-size: 1rem;
-  }
-
-  p {
-    margin: 0;
-  }
-}
-
-.principle-list {
-  display: grid;
-  gap: 0.5rem;
-
-  > div {
-    display: grid;
-    grid-template-columns: minmax(8rem, 0.42fr) 1fr;
-    gap: 0.8rem;
-    align-items: start;
-    padding: 0.72rem 0;
-    border-bottom: 1px solid var(--lightgray);
-  }
-
-  strong {
-    color: var(--dark);
-  }
-
-  span {
-    color: var(--ink-soft);
-  }
-}
-
-.flow-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-
-  span {
-    position: relative;
-    padding: 0.45rem 0.7rem;
-    border: 1px solid var(--panel-border);
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--secondary) 10%, transparent);
-    color: var(--dark);
-    font-size: 0.9rem;
-    font-weight: 700;
-  }
-}
-
-.compact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-
-  a {
-    padding: 0.55rem 0.75rem;
-    border: 1px solid var(--panel-border);
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--tertiary) 12%, transparent);
-  }
-}
-
-@media all and (max-width: 800px) {
-  .signal-grid,
-  .split-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-panel .hero-copy {
-    font-size: 1.05rem;
-  }
-
-  .principle-list > div {
-    grid-template-columns: 1fr;
-    gap: 0.2rem;
   }
 }

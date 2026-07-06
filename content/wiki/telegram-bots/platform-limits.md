@@ -21,13 +21,13 @@ These limits do not show up in code review. They show up at runtime.
 
 ## Numbers to memorise
 
-<div class="metric-strip">
-  <div><strong>20 MB</strong><span>bot file download cap</span></div>
-  <div><strong>4096</strong><span>message characters</span></div>
-  <div><strong>1024</strong><span>media caption characters</span></div>
-  <div><strong>64 bytes</strong><span>callback payload</span></div>
-  <div><strong>3-5</strong><span>visible commands</span></div>
-</div>
+| Number       | Meaning                  |
+| ------------ | ------------------------ |
+| **20 MB**    | Bot file download cap    |
+| **4096**     | Message characters       |
+| **1024**     | Media caption characters |
+| **64 bytes** | Callback payload         |
+| **3-5**      | Visible commands         |
 
 ## Webview cliffs
 

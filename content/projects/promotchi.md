@@ -6,10 +6,7 @@ publish: true
 
 # Promotchi
 
-<div class="hero-panel">
-  <p class="kicker">Accountability without surveillance.</p>
-  <p class="hero-copy">Retail promoters submit availabilities and post-shift updates through a Telegram bot. On-time, complete submissions earn treats that feed an evolving virtual pet.</p>
-</div>
+Retail promoters submit availabilities and post-shift updates through a Telegram bot. On-time, complete submissions earn treats that feed an evolving virtual pet.
 
 ## Before
 
@@ -17,24 +14,12 @@ Two duties had to be chased every week: availability for rostering, and store up
 
 ## The build
 
-<div class="split-grid">
-  <div>
-    <h3>Make the duty rewarding</h3>
-    <p>Complete submissions earn treats. Treats feed a custom pet. A shared yard turns participation into something visible.</p>
-  </div>
-  <div>
-    <h3>Engineer fairness</h3>
-    <p>Scoring uses fulfilment rate against each person's actual roster, join date, and excused weeks. Team leaderboards avoid individual shaming.</p>
-  </div>
-  <div>
-    <h3>Reduce friction</h3>
-    <p>Shift pings arrive with a one-tap button into the update form. The reminder is also the doorway.</p>
-  </div>
-  <div>
-    <h3>Read the field</h3>
-    <p>Updates become a daily department report: coverage, wins, signals, and alerts.</p>
-  </div>
-</div>
+| Design choice     | Why it mattered                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reward the duty   | Complete submissions earn treats. Treats feed a custom pet. A shared yard makes participation visible.                                      |
+| Engineer fairness | Scoring uses fulfilment rate against each person's actual roster, join date, and excused weeks. Team leaderboards avoid individual shaming. |
+| Reduce friction   | Shift pings arrive with a one-tap button into the update form. The reminder is also the doorway.                                            |
+| Read the field    | Updates become a daily department report: coverage, wins, signals, and alerts.                                                              |
 
 ## After
 

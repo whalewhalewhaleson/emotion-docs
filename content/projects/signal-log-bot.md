@@ -6,10 +6,7 @@ publish: true
 
 # Signal Log Bot
 
-<div class="hero-panel">
-  <p class="kicker">One message per firefight.</p>
-  <p class="hero-copy">A person logs the disruption in plain text. The weekly AI pass turns the pile into named, recurring problems leadership can act on.</p>
-</div>
+A person logs a workflow disruption in plain text. A weekly AI pass turns the pile into named, recurring problems leadership can act on.
 
 ## Before
 
@@ -17,28 +14,21 @@ The first signal-capture workflow was a multi-field form. It asked people to cla
 
 ## The build
 
-<div class="flow-row">
-  <span>Tap</span>
-  <span>Describe</span>
-  <span>Review</span>
-  <span>Submit</span>
-  <span>AI clusters weekly</span>
-</div>
+The capture path became deliberately small:
+
+1. Tap.
+2. Describe.
+3. Review.
+4. Submit.
 
 No dropdowns at capture. No impact matrix. The bot wins the logging habit first; enrichment happens later.
 
 ## What the AI adds
 
-<div class="split-grid">
-  <div>
-    <h3>Shape</h3>
-    <p>A consistent taxonomy of disruption types, applied after the fact so users never argue with categories.</p>
-  </div>
-  <div>
-    <h3>Substance</h3>
-    <p>Specific recurring failures, with evidence linked back to the underlying signals and comment threads.</p>
-  </div>
-</div>
+| Layer     | Purpose                                                                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------- |
+| Shape     | A consistent taxonomy of disruption types, applied after the fact so users never argue with categories. |
+| Substance | Specific recurring failures, with evidence linked back to the underlying signals and comment threads.   |
 
 ## After
 

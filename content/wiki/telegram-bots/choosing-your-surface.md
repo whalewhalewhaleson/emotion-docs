@@ -18,11 +18,9 @@ All three can read the same database. The split is interface, not infrastructure
 
 ## Rules that held up
 
-<div class="principle-list">
-  <div><strong>Residency beats reachability.</strong><span>A tool people can open loses to the app already open. Telegram won because the team lived there.</span></div>
-  <div><strong>Graduate when commands sprawl.</strong><span>Past 3-5 visible bot commands, move browsing, history, and editing into a Mini App.</span></div>
-  <div><strong>Use dashboards for comparison.</strong><span>Leadership needs a big screen, filters, export, and session state.</span></div>
-  <div><strong>Keep groups write-only.</strong><span>In group chats, the bot broadcasts. Commands and sensitive flows stay in DMs.</span></div>
-</div>
+- **Residency beats reachability.** A tool people can open loses to the app already open. Telegram won because the team lived there.
+- **Graduate when commands sprawl.** Past 3-5 visible bot commands, move browsing, history, and editing into a Mini App.
+- **Use dashboards for comparison.** Leadership needs a big screen, filters, export, and session state.
+- **Keep groups write-only.** In group chats, the bot broadcasts. Commands and sensitive flows stay in DMs.
 
 Related: [[wiki/telegram-bots/authentication-and-access|Authentication & Access]]
