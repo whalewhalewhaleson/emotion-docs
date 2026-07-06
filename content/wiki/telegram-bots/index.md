@@ -1,24 +1,27 @@
 ---
 title: Telegram Bot Engineering
-description: Everything we've learned shipping production Telegram bots for business operations — surfaces, auth, platform limits, conversation design, and reliability.
+description: Practical patterns from shipping production Telegram bots for business operations.
 publish: true
 ---
 
 # Telegram Bot Engineering
 
-Every operational tool we've built — [[projects/store-visit-app|field reporting]], [[projects/signal-log-bot|incident logging]], [[projects/cultivaite|culture campaigns]], [[projects/promotchi|workforce engagement]] — runs on Telegram bots. Not because bots are trendy, but because Telegram is where our teams already work, and a tool that lives where its users live wins by default.
+<div class="hero-panel compact">
+  <p class="kicker">The production notes.</p>
+  <p class="hero-copy">Every operational tool here runs through Telegram because that is where the teams already work. This wiki captures what survived real usage.</p>
+</div>
 
-Shipping seven-plus production bots taught us things the documentation doesn't. This wiki is that knowledge, organised:
+## The map
 
-## The pages
+<div class="signal-grid">
+  <a class="signal-card" href="/wiki/telegram-bots/choosing-your-surface"><span class="eyebrow">Surface</span><strong>Choosing Your Surface</strong><span>Bot, Mini App, dashboard: match the task to the user's mode.</span></a>
+  <a class="signal-card" href="/wiki/telegram-bots/authentication-and-access"><span class="eyebrow">Identity</span><strong>Authentication & Access</strong><span>Telegram auth, allowlists, revocation, and onboarding.</span></a>
+  <a class="signal-card" href="/wiki/telegram-bots/platform-limits"><span class="eyebrow">Runtime</span><strong>Platform Limits</strong><span>File caps, message caps, markdown traps, and webview cliffs.</span></a>
+  <a class="signal-card" href="/wiki/telegram-bots/conversation-design"><span class="eyebrow">Flow</span><strong>Conversation Design</strong><span>Controls, multi-step capture, copy, and persistent keyboards.</span></a>
+  <a class="signal-card" href="/wiki/telegram-bots/mini-apps"><span class="eyebrow">Webview</span><strong>Mini Apps</strong><span>Deep links, auth headers, media, and cross-surface sync.</span></a>
+  <a class="signal-card" href="/wiki/telegram-bots/running-in-production"><span class="eyebrow">Ops</span><strong>Running in Production</strong><span>Deploys, polling conflicts, scheduled AI jobs, broadcasts.</span></a>
+</div>
 
-- [[wiki/telegram-bots/choosing-your-surface|Choosing Your Surface]] — bot chat vs Mini App vs web dashboard: match the surface to the cognitive mode of the task, not to what's easiest to build.
-- [[wiki/telegram-bots/authentication-and-access|Authentication & Access]] — Telegram as your identity layer: no login forms, two verification flavours, and the access-control flows around them.
-- [[wiki/telegram-bots/platform-limits|Platform Limits]] — the cliff edges: file caps, message lengths, markdown traps, and the restrictions that only fail at runtime.
-- [[wiki/telegram-bots/conversation-design|Conversation Design]] — input controls, multi-step flows, and copy that works in one-second glances.
-- [[wiki/telegram-bots/mini-apps|Mini Apps]] — deep links, cross-surface sync, authenticated media, and the webview's sharp edges.
-- [[wiki/telegram-bots/running-in-production|Running in Production]] — deploy gotchas, the pitfalls that bite every new bot, and architecture for scheduled AI consumers.
+## Philosophy
 
-## The one-paragraph philosophy
-
-A business bot is a **capture device** first: its job is to make a recurring duty (log the visit, report the incident, submit the reflection) so cheap that people actually do it. Everything else — dashboards, intelligence, gamification — depends on the capture habit existing. So we optimise ruthlessly for the capture path, keep commands few, gate everything on Telegram identity, and treat every platform limit on this wiki as a production incident someone already had.
+A business bot is a **capture device** first. Make the recurring duty cheap enough that people actually do it. Dashboards, intelligence, and gamification only work after the habit exists.

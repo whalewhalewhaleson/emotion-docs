@@ -1,26 +1,44 @@
 ---
 title: Show Your Work
-description: The AI tools we built for TC Acoustic, and everything we learned building them.
+description: The AI tools we built for TC Acoustic, and the practical lessons from shipping them.
 publish: true
 ---
 
 # Show Your Work
 
-We build custom AI tools for [TC Acoustic](https://www.tcacoustic.asia/), a consumer-audio distributor operating across Singapore, Malaysia, Thailand, and Hong Kong. Not off-the-shelf software — small, sharp tools shaped around how each team actually works: Telegram bots the field team lives in, dashboards leadership actually reads, and AI layers that turn scattered field notes into intelligence.
+<div class="hero-panel">
+  <p class="kicker">Custom AI tools, built inside a real operating business.</p>
+  <p class="hero-copy">We build small, sharp systems for TC Acoustic: Telegram bots the field team already lives in, dashboards leadership actually reads, and AI layers that turn messy daily inputs into operational intelligence.</p>
+</div>
 
-This site is us showing our work. The tools, the design decisions, and the engineering lessons — published so anyone building similar things can learn from what we got right and what bit us.
+<div class="signal-grid">
+  <a class="signal-card" href="/projects/store-visit-app">
+    <span class="eyebrow">Field reporting</span>
+    <strong>Store Visit App</strong>
+    <span>Visit logs in minutes. Daily AI briefs by morning.</span>
+  </a>
+  <a class="signal-card" href="/projects/signal-log-bot">
+    <span class="eyebrow">Workflow friction</span>
+    <strong>Signal Log Bot</strong>
+    <span>One free-text log. Weekly clusters of what keeps breaking.</span>
+  </a>
+  <a class="signal-card" href="/projects/cultivaite">
+    <span class="eyebrow">Culture operations</span>
+    <strong>CultivAIte</strong>
+    <span>Weekly reflection, peer recognition, and a garden that grows with participation.</span>
+  </a>
+  <a class="signal-card" href="/projects/promotchi">
+    <span class="eyebrow">Field team rhythm</span>
+    <strong>Promotchi</strong>
+    <span>Kind accountability: submit on time, earn treats, feed your pet.</span>
+  </a>
+</div>
 
-## The tools
+## Start here
 
-- [[projects/store-visit-app|Store Visit App]] — field reporting so frictionless the team stopped resisting it, plus an AI layer that reads every visit and briefs leadership daily.
-- [[projects/signal-log-bot|Signal Log Bot]] — one free-text message to log a workflow disruption; AI clusters the patterns weekly so recurring problems stop hiding.
-- [[projects/cultivaite|CultivAIte]] — a culture campaign as a bot: weekly reflection, peer recognition, and a company garden that grows with participation.
-- [[projects/promotchi|Promotchi]] — gamified accountability for a retail promoter team: submit on time, feed your pet.
+<div class="compact-links">
+  <a href="/wiki/telegram-bots">Telegram Bot Engineering</a>
+  <a href="/about">Why this exists</a>
+</div>
 
-## The engineering
-
-- [[wiki/telegram-bots/index|Telegram Bot Engineering]] — everything we've learned shipping production Telegram bots: choosing surfaces, authentication, platform limits, conversation design, and running them reliably.
-
-## Why publish this?
-
-Because "we build custom AI tools" is a claim anyone can make. Showing the actual work — with the trade-offs and the failures left in — is the only version of that claim worth reading.
+Because "we build custom AI tools" is easy to claim. The useful proof is the work: the choices, trade-offs, failures, and patterns that survived production.
