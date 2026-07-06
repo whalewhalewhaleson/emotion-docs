@@ -17,14 +17,12 @@ A business bot is usually a form wearing a chat costume. The controls matter.
 
 ## Patterns that survived
 
-<div class="principle-list">
-  <div><strong>Auto-save early.</strong><span>Users send photos and text as if sending means done. Save first, ask the next meaningful question after.</span></div>
-  <div><strong>Morph one message.</strong><span>For browse-and-act, edit a single card instead of filling the chat.</span></div>
-  <div><strong>Keep pagination stateless.</strong><span>Encode the page in callback data; re-fetch on every tap.</span></div>
-  <div><strong>Pre-fill context.</strong><span>Show "Logging to X" with a small Change button. Most users should not choose what you already know.</span></div>
-  <div><strong>Cancel anywhere.</strong><span>A new command mid-flow means abandon. Detect it before the wait loop swallows it.</span></div>
-  <div><strong>Preview broadcasts.</strong><span>One cron previews to an operator; another sends. Cheap intervention window.</span></div>
-</div>
+- **Auto-save early.** Users send photos and text as if sending means done. Save first, ask the next meaningful question after.
+- **Morph one message.** For browse-and-act, edit a single card instead of filling the chat.
+- **Keep pagination stateless.** Encode the page in callback data; re-fetch on every tap.
+- **Pre-fill context.** Show "Logging to X" with a small Change button. Most users should not choose what you already know.
+- **Cancel anywhere.** A new command mid-flow means abandon. Detect it before the wait loop swallows it.
+- **Preview broadcasts.** One cron previews to an operator; another sends. Cheap intervention window.
 
 ## Keyboard warning
 

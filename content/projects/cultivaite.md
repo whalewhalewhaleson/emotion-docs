@@ -6,16 +6,7 @@ publish: true
 
 # CultivAIte
 
-<div class="hero-panel">
-  <p class="kicker">Culture campaign, operationalised.</p>
-  <p class="hero-copy">A weekly reflection habit run by a Telegram bot, with peer recognition automated end-to-end and participation made visible through a shared company garden.</p>
-</div>
-
-<div class="metric-strip">
-  <div><strong>100%</strong><span>company participation</span></div>
-  <div><strong>3x+</strong><span>peer recognition volume</span></div>
-  <div><strong>Minutes</strong><span>to submit weekly reflection</span></div>
-</div>
+CultivAIte is a weekly reflection campaign run by a Telegram bot, with peer recognition automated end-to-end and participation made visible through a shared company garden.
 
 ## Before
 
@@ -25,24 +16,12 @@ publish: true
 
 ## The build
 
-<div class="split-grid">
-  <div>
-    <h3>Weekly flow</h3>
-    <p>Three questions in Telegram: value lived out, role reflection, optional teammate recognition. Deadlines, reminders, late handling, and market-specific holidays are automated.</p>
-  </div>
-  <div>
-    <h3>Recognition pipeline</h3>
-    <p>Good News enters an approval queue. Approved shout-outs are announced, points credited, and history preserved without spreadsheet work.</p>
-  </div>
-  <div>
-    <h3>Shared garden</h3>
-    <p>Every person is a plant that grows with participation. Streaks, excusals, and team averages are handled fairly, not manually.</p>
-  </div>
-  <div>
-    <h3>Personal journal</h3>
-    <p>Staff can see reflections, shout-outs, and where points came from in a Mini App.</p>
-  </div>
-</div>
+| Part                 | What it does                                                                                                                                                                   |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Weekly flow          | Three questions in Telegram: value lived out, role reflection, optional teammate recognition. Deadlines, reminders, late handling, and market-specific holidays are automated. |
+| Recognition pipeline | Good News enters an approval queue. Approved shout-outs are announced, points credited, and history preserved without spreadsheet work.                                        |
+| Shared garden        | Every person is a plant that grows with participation. Streaks, excusals, and team averages are handled fairly, not manually.                                                  |
+| Personal journal     | Staff can see reflections, shout-outs, and where points came from in a Mini App.                                                                                               |
 
 ## After
 

@@ -17,12 +17,10 @@ For internal tools whose users already use your bot, Telegram can be the identit
 
 ## Implementation notes
 
-<div class="principle-list">
-  <div><strong>Login Widget</strong><span>Verify the signed payload with SHA256(bot token), reject stale payloads, check the allowlist, issue a session cookie.</span></div>
-  <div><strong>Mini App initData</strong><span>Verify every API request. The HMAC recipe is different: HMAC("WebAppData", bot token). Read once on mount; send as a header.</span></div>
-  <div><strong>Compare safely</strong><span>Use timing-safe equality for hashes. Tiny detail, real security boundary.</span></div>
-  <div><strong>Re-query access</strong><span>Revocation must hit the source-of-truth table on every authenticated request. A cookie does not know someone was removed.</span></div>
-</div>
+- **Login Widget:** verify the signed payload with SHA256(bot token), reject stale payloads, check the allowlist, issue a session cookie.
+- **Mini App `initData`:** verify every API request. The HMAC recipe is different: HMAC("WebAppData", bot token). Read once on mount; send as a header.
+- **Compare safely:** use timing-safe equality for hashes. Tiny detail, real security boundary.
+- **Re-query access:** revocation must hit the source-of-truth table on every authenticated request. A cookie does not know someone was removed.
 
 ## Onboarding constraint
 

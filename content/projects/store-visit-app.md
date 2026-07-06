@@ -6,16 +6,7 @@ publish: true
 
 # Store Visit App
 
-<div class="hero-panel">
-  <p class="kicker">Field reports without desk work.</p>
-  <p class="hero-copy">Channel managers log structured store visits from Telegram in minutes. An AI layer reads every report overnight and briefs leadership each morning.</p>
-</div>
-
-<div class="metric-strip">
-  <div><strong>4</strong><span>markets adopted</span></div>
-  <div><strong>Daily</strong><span>AI leadership brief</span></div>
-  <div><strong>1</strong><span>reference architecture reused by later tools</span></div>
-</div>
+Channel managers log structured store visits from Telegram in minutes. An AI layer reads every report overnight and briefs leadership each morning.
 
 ## Before
 
@@ -25,19 +16,14 @@ publish: true
 
 ## The build
 
-<div class="split-grid">
-  <div>
-    <h3>Telegram capture</h3>
-    <p>A guided six-section visit flow with photos: display, engagement, training, competitor activity, follow-ups. No new app, no forgotten login, no desk time.</p>
-  </div>
-  <div>
-    <h3>AI reading layer</h3>
-    <p>Daily briefs, weekly patterns, monthly channel dossiers. Counts come from structured data; qualitative signals are tracked as observations the system revisits.</p>
-  </div>
-</div>
+| Layer            | What changed                                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Telegram capture | A guided six-section visit flow with photos: display, engagement, training, competitor activity, and follow-ups. No new app, forgotten login, or desk time.         |
+| AI reading layer | Daily briefs, weekly patterns, and monthly channel dossiers. Counts come from structured data; qualitative signals are tracked as observations the system revisits. |
 
 ## After
 
+- Adopted across four markets.
 - Leadership reads a daily brief instead of chasing updates.
 - Managers log richer qualitative intel because capture is cheap.
 - Nudges, recaps, and summaries now run on schedule.

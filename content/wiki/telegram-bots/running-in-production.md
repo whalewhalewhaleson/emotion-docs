@@ -10,11 +10,9 @@ The gap between "the bot works" and "the bot runs daily operations" is mostly de
 
 ## Deploy gotchas
 
-<div class="principle-list">
-  <div><strong>Rolling deploys collide with polling.</strong><span>Telegram allows one consumer per bot token. Stop the old bot cleanly before the new one listens.</span></div>
-  <div><strong>Failed builds strand old deploys.</strong><span>Push-to-deploy can leave the last green version running. Verify the deployed version, not the pushed commit.</span></div>
-  <div><strong>Login Widget domains must match.</strong><span>The registered domain must match hosting exactly; localhost cannot use the widget.</span></div>
-</div>
+- **Rolling deploys collide with polling.** Telegram allows one consumer per bot token. Stop the old bot cleanly before the new one listens.
+- **Failed builds strand old deploys.** Push-to-deploy can leave the last green version running. Verify the deployed version, not the pushed commit.
+- **Login Widget domains must match.** The registered domain must match hosting exactly; localhost cannot use the widget.
 
 ## Pitfalls
 

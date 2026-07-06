@@ -1,6 +1,7 @@
 # emotion-docs — Public Documentation Site
 
 ## Context + Goal
+
 World-facing digital garden publishing the AI tools built for TC Acoustic
 and the lessons learned building them. Purpose: build authority +
 authenticity for eMotion (TC's custom-AI-solutions sister company) so
@@ -13,6 +14,7 @@ site content, run /document (the pipeline skill); don't hand-write pages
 from scratch.
 
 ## Architecture
+
 - Quartz static site → Vercel (build: `npx quartz build`, output: public/).
   Pinned to the v4 line (branched from v4.5.2) — v5 shipped 2026-07 with a
   remote community-plugin system and no ExplicitPublish; revisit when mature.
@@ -24,6 +26,7 @@ from scratch.
   rewrite, redaction, and provenance rules.
 
 ## Instructions
+
 - PR-first, NO auto-push, Codex gate on every PR (AGENTS.md rubric).
   ALL content PRs are sensitive tier (bar 95) — they publish publicly.
 - Nothing merges until Wilson has eyeballed the Vercel preview. No
@@ -33,5 +36,8 @@ from scratch.
   names, no telegram/chat IDs, no keys/tokens/Supabase refs, no sales or
   payroll figures. The concrete banned-terms list lives PRIVATELY with the
   /document skill — never commit it, or any lint output quoting it, here.
+- Visuals are used only where they carry meaning. Prefer smooth prose,
+  bullets, simple tables, and standard callouts. Avoid custom visual blocks
+  unless a mock-up or diagram is genuinely necessary.
 - Framework updates: pull from `upstream` (jackyzha0/quartz, v4 branch) on
   a branch, through the same PR gate.

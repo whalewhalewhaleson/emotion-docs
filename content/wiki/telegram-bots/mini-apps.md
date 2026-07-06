@@ -25,14 +25,12 @@ Watch the two traps:
 
 The bot and Mini App often touch the same draft. Keep the bot conversation small, then let stateless button handlers and API endpoints finish the work.
 
-Pattern:
+Typical flow:
 
-<div class="flow-row">
-  <span>Create draft</span>
-  <span>Post chat card</span>
-  <span>Finish in app</span>
-  <span>Edit card to done</span>
-</div>
+1. Create draft.
+2. Post chat card.
+3. Finish in app.
+4. Edit the chat card to done.
 
 ## Authenticated images
 
