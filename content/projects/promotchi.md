@@ -4,8 +4,6 @@ description: "A gamified Telegram bot for retail promoters: submit on time, earn
 publish: true
 ---
 
-# Promotchi
-
 Retail promoters submit availabilities and post-shift updates through a Telegram bot. On-time, complete submissions earn treats that feed an evolving virtual pet.
 
 ## Before

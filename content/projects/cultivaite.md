@@ -4,8 +4,6 @@ description: "A quarterly reflection campaign rebuilt as a Telegram bot: weekly 
 publish: true
 ---
 
-# CultivAIte
-
 CultivAIte is a weekly reflection campaign run by a Telegram bot, with peer recognition automated end-to-end and participation made visible through a shared company garden.
 
 ## Before

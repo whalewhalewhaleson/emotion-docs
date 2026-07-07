@@ -23,6 +23,9 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import BottomBar from "./BottomBar"
+import CopyPage from "./CopyPage"
+import SiteFooter from "./SiteFooter"
 
 export {
   ArticleTitle,
@@ -50,4 +53,7 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  BottomBar,
+  CopyPage,
+  SiteFooter,
 }

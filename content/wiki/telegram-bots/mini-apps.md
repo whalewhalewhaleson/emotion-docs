@@ -4,8 +4,6 @@ description: Deep links, cross-surface sync, authenticated media, and Telegram w
 publish: true
 ---
 
-# Mini Apps
-
 A Mini App is a web app inside Telegram with identity attached. Use it when chat becomes too small for the job.
 
 ## Deep links

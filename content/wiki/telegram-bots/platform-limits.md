@@ -4,8 +4,6 @@ description: "Telegram's cliff edges: file caps, message lengths, markdown traps
 publish: true
 ---
 
-# Platform Limits
-
 These limits do not show up in code review. They show up at runtime.
 
 | Limit                         | Breaks                                     | Use instead                                       |
