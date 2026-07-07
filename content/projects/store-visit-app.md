@@ -1,10 +1,10 @@
 ---
-title: "Store Visit App: Field Reports That Nobody Has to Chase"
-description: A Telegram-native store visit tool that freed channel managers from admin, with an AI layer that reads every visit overnight.
+title: "SVA: Field Reports That Nobody Has to Chase"
+description: A Telegram-native field reporting system with an AI layer that turns every visit into daily leadership intelligence.
 publish: true
 ---
 
-Channel managers log structured store visits from Telegram in minutes. An AI layer reads every report overnight and briefs leadership each morning.
+SVA is a Telegram-native store visit tool. Channel managers log structured visits in minutes, then an AI layer reads every report overnight and briefs leadership each morning.
 
 ## Before
 
@@ -19,6 +19,14 @@ Channel managers log structured store visits from Telegram in minutes. An AI lay
 | Telegram capture | A guided six-section visit flow with photos: display, engagement, training, competitor activity, and follow-ups. No new app, forgotten login, or desk time.         |
 | AI reading layer | Daily briefs, weekly patterns, and monthly channel dossiers. Counts come from structured data; qualitative signals are tracked as observations the system revisits. |
 
+## What this project teaches
+
+| Lesson                      | Why it matters                                                                |
+| --------------------------- | ----------------------------------------------------------------------------- |
+| Capture must be cheaper     | People report more when the tool fits the moment of work.                     |
+| AI needs structured context | Summaries are stronger when qualitative notes sit beside reliable fields.     |
+| Reports need a reader       | A system is only useful when the output lands where decisions already happen. |
+
 ## After
 
 - Adopted across four markets.
@@ -30,3 +38,10 @@ Channel managers log structured store visits from Telegram in minutes. An AI lay
 ## Under the hood
 
 Telegram bot for capture, Mini App for browsing and editing, web dashboard for analytics, one database underneath. The AI layer combines SQL counts with tagged observations and multi-week hypotheses. Related patterns live in the [[wiki/telegram-bots/index|Telegram bot wiki]].
+
+## Read next
+
+- [[playbooks/telegram-bots|Telegram Bot Playbook]]
+- [[topics/ai-automation|AI & Automation]]
+- [[projects/signal-log-bot|Signal Log Bot]]
+- [[projects/index|Projects]]
