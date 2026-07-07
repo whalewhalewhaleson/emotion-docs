@@ -21,4 +21,4 @@ All three can read the same database. The split is interface, not infrastructure
 - **Use dashboards for comparison.** Leadership needs a big screen, filters, export, and session state.
 - **Keep groups write-only.** In group chats, the bot broadcasts. Commands and sensitive flows stay in DMs.
 
-Related: [[wiki/telegram-bots/authentication-and-access|Authentication & Access]]
+Related: [[playbooks/telegram-bots/authentication-and-access|Authentication & Access]]

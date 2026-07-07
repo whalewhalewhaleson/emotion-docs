@@ -35,7 +35,7 @@ Weekly participation reached the whole company. Peer recognition more than tripl
 
 ## Under the hood
 
-Telegram bot, staff Mini App, campaign dashboard, points ledger, custom week boundaries, per-person deadline offsets, and streak-preserving excusal rules. The bot engineering lessons sit in the [[wiki/telegram-bots/index|Telegram bot wiki]].
+Telegram bot, staff Mini App, campaign dashboard, points ledger, custom week boundaries, per-person deadline offsets, and streak-preserving excusal rules. The bot engineering lessons sit in the [[playbooks/telegram-bots|Telegram Bot Playbook]].
 
 ## Read next
 

@@ -56,4 +56,3 @@ We use it to read existing systems, make focused changes, test the result, and c
 - [[topics/ai-automation|AI & Automation]]
 - [[playbooks/telegram-bots|Telegram Bot Playbook]]
 - [[projects/index|Projects]]
-- [[latest|Latest]]

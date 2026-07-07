@@ -37,7 +37,7 @@ SVA is a Telegram-native store visit tool. Channel managers log structured visit
 
 ## Under the hood
 
-Telegram bot for capture, Mini App for browsing and editing, web dashboard for analytics, one database underneath. The AI layer combines SQL counts with tagged observations and multi-week hypotheses. Related patterns live in the [[wiki/telegram-bots/index|Telegram bot wiki]].
+Telegram bot for capture, Mini App for browsing and editing, web dashboard for analytics, one database underneath. The AI layer combines SQL counts with tagged observations and multi-week hypotheses. Related patterns live in the [[playbooks/telegram-bots|Telegram Bot Playbook]].
 
 ## Read next
 

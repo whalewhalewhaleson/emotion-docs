@@ -43,6 +43,5 @@ This keeps AI useful instead of messy.
 ## Related pages
 
 - See how we build with AI assistance in [[playbooks/claude-code|Claude Code]].
-- See chat-based automation patterns in [[playbooks/telegram-bots|Telegram Bots]].
-- Read the deeper engineering notes in [[wiki/telegram-bots/index|Telegram Bot Engineering]].
+- Use [[playbooks/telegram-bots|Telegram Bots]] when the workflow starts in chat.
 - Browse the proof layer in [[projects/index|Projects]].

@@ -31,4 +31,3 @@ Each page explains what was built, why it mattered, which decisions shaped the s
 - Learn the shared approach in [[topics/ai-automation|AI & Automation]].
 - Use [[playbooks/claude-code|Claude Code]] when planning or improving a build.
 - Use [[playbooks/telegram-bots|Telegram Bots]] when the workflow starts in chat.
-- See what changed recently in [[latest|Latest]].

@@ -45,7 +45,7 @@ No dropdowns at capture. No impact matrix. The bot wins the logging habit first;
 
 ## Under the hood
 
-Telegram bot for capture, Mini App and dashboard for reading, one database as source of truth, scheduled AI routine for the weekly report. Capture stays dumb and fast; interpretation is centralised. Related lessons: [[wiki/telegram-bots/index|Telegram Bot Engineering]].
+Telegram bot for capture, Mini App and dashboard for reading, one database as source of truth, scheduled AI routine for the weekly report. Capture stays dumb and fast; interpretation is centralised. Related lessons: [[playbooks/telegram-bots|Telegram Bot Playbook]].
 
 ## Read next
 

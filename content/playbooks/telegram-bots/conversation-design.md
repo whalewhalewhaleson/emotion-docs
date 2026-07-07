@@ -30,4 +30,4 @@ A persistent reply keyboard is state. Re-attach it on every private-chat exit pa
 
 Ask for interpretation, not description. "What made it work?" gets better signal than "Describe the visit." If AI can infer a field later, do not ask a human at capture time.
 
-Related: [[wiki/telegram-bots/platform-limits|Platform Limits]]
+Related: [[playbooks/telegram-bots/platform-limits|Platform Limits]]

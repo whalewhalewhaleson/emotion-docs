@@ -33,4 +33,4 @@ Two flows solve it:
 
 Telegram auth fits internal tools where the team already lives in Telegram. Public products, company SSO, or compliance-grade identity need a real identity provider.
 
-Related: [[wiki/telegram-bots/mini-apps|Mini Apps]]
+Related: [[playbooks/telegram-bots/mini-apps|Mini Apps]]
