@@ -19,6 +19,12 @@ from scratch.
   Pinned to the v4 line (branched from v4.5.2) — v5 shipped 2026-07 with a
   remote community-plugin system and no ExplicitPublish; revisit when mature.
 - ExplicitPublish filter: only `publish: true` frontmatter pages build.
+- Theme (2026-07-07 redesign, PR #9): site is "eMotion Docs" — bottom control
+  bar (BottomBar.tsx: search/graph/reader/darkmode, popups open upward; no
+  transform/backdrop-filter on it — that clips the fixed overlays), CopyPage.tsx
+  beside titles, RawMarkdown emitter serves each page's source at <slug>.md,
+  SiteFooter.tsx (no Quartz attribution). Content pages carry NO h1 — the
+  ArticleTitle component renders the title from frontmatter.
 - Unlisted mode: vercel.json X-Robots-Tag noindex — removing it = going
   public = sensitive-tier PR + Wilson's explicit call.
 - content/: index.md · about.md · projects/ (showcases) · wiki/ (clusters).
