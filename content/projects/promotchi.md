@@ -36,7 +36,7 @@ Two duties had to be chased every week: availability for rostering, and store up
 
 ## Under the hood
 
-Telegram bot, Mini App for pet and journal, dashboard for the department, one database with role separation, points ledger integrity rules, scheduled shift pings, and scheduled reports. Related patterns: [[wiki/telegram-bots/index|Telegram Bot Engineering]].
+Telegram bot, Mini App for pet and journal, dashboard for the department, one database with role separation, points ledger integrity rules, scheduled shift pings, and scheduled reports. Related patterns: [[playbooks/telegram-bots|Telegram Bot Playbook]].
 
 ## Read next
 

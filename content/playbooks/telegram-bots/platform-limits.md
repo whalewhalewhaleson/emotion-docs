@@ -31,4 +31,4 @@ These limits do not show up in code review. They show up at runtime.
 
 Mini Apps run in Telegram's webview. We have seen desktop-perfect CSS fail there: background cropping, inherited image rendering, stale cached assets. If the browser looks right but Telegram does not, switch primitives before endlessly tuning fragile CSS.
 
-Related: [[wiki/telegram-bots/running-in-production|Running in Production]]
+Related: [[playbooks/telegram-bots/running-in-production|Running in Production]]

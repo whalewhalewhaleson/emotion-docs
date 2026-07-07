@@ -26,8 +26,8 @@ from scratch.
   SiteFooter.tsx (no Quartz attribution). Content pages carry NO h1 — the
   ArticleTitle component renders the title from frontmatter.
 - Unlisted mode: vercel.json X-Robots-Tag noindex — removing it = going
-  public = sensitive-tier PR + Wilson's explicit call.
-- content/: index.md · about.md · projects/ (showcases) · wiki/ (clusters).
+  public = sensitive-tier PR + the eMotion team's explicit call.
+- content/: index.md · about.md · projects/ · topics/ · playbooks/.
 - Load /document before touching any content in content/ — it owns the
   rewrite, redaction, and provenance rules.
 
@@ -35,7 +35,7 @@ from scratch.
 
 - PR-first, NO auto-push, Codex gate on every PR (AGENTS.md rubric).
   ALL content PRs are sensitive tier (bar 95) — they publish publicly.
-- Nothing merges until Wilson has eyeballed the Vercel preview. No
+- Nothing merges until the eMotion team has eyeballed the Vercel preview. No
   exceptions, including "trivial" copy fixes.
 - Redaction is absolute: no competitor/retailer/store/vendor real names
   (use "Competitor #1", "Store #1", "an enterprise system"), no colleague

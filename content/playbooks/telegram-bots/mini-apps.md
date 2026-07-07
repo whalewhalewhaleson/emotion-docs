@@ -38,4 +38,4 @@ An `<img src>` cannot send your auth header. For private media, fetch the blob w
 
 Telegram's webview is not Chrome. Fragile CSS, hard asset caching, and rendering quirks are normal. Verify inside Telegram, and prefer robust primitives over clever styling.
 
-Related: [[wiki/telegram-bots/platform-limits|Platform Limits]]
+Related: [[playbooks/telegram-bots/platform-limits|Platform Limits]]

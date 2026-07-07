@@ -34,4 +34,4 @@ Also: message ids are unique per chat, not globally. Bind replies with `chat_id 
 
 Every automated send to real people gets three things: operator preview, post-send summary, and a kill switch that stops the schedule without a deploy.
 
-Related: [[wiki/telegram-bots/conversation-design|Conversation Design]]
+Related: [[playbooks/telegram-bots/conversation-design|Conversation Design]]

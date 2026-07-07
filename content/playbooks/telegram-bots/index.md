@@ -40,6 +40,17 @@ We use bots when the work is recurring, the user is already in Telegram, and the
 - Move dense review work into a Mini App or dashboard.
 - Treat every message as interface copy.
 
+## Deep dives
+
+| Page                                                                           | Covers                                                        |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| [[playbooks/telegram-bots/choosing-your-surface\|Choosing Your Surface]]       | Bot, Mini App, dashboard: match the task to the user's mode.  |
+| [[playbooks/telegram-bots/authentication-and-access\|Authentication & Access]] | Telegram auth, allowlists, revocation, and onboarding.        |
+| [[playbooks/telegram-bots/platform-limits\|Platform Limits]]                   | File caps, message caps, markdown traps, and webview cliffs.  |
+| [[playbooks/telegram-bots/conversation-design\|Conversation Design]]           | Controls, multi-step capture, copy, and persistent keyboards. |
+| [[playbooks/telegram-bots/mini-apps\|Mini Apps]]                               | Deep links, auth headers, media, and cross-surface sync.      |
+| [[playbooks/telegram-bots/running-in-production\|Running in Production]]       | Deploys, polling conflicts, scheduled AI jobs, broadcasts.    |
+
 ## Project patterns
 
 | Project                                     | Bot lesson                                                              |
@@ -51,7 +62,9 @@ We use bots when the work is recurring, the user is already in Telegram, and the
 
 ## Related pages
 
-- [[wiki/telegram-bots/index|Telegram Bot Engineering]]
+- [[playbooks/telegram-bots/choosing-your-surface|Choosing Your Surface]]
+- [[playbooks/telegram-bots/conversation-design|Conversation Design]]
+- [[playbooks/telegram-bots/running-in-production|Running in Production]]
 - [[topics/ai-automation|AI & Automation]]
 - [[playbooks/claude-code|Claude Code Playbook]]
 - [[projects/index|Projects]]
