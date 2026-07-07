@@ -1,6 +1,6 @@
 ---
 title: "Promotchi: Kind Accountability for a Field Team"
-description: "A gamified Telegram bot for retail promoters: submit on time, earn treats, feed a pet, and turn store updates into usable intelligence."
+description: "A gamified Telegram bot for field accountability: timely submissions, treats, virtual pets, and usable team intelligence."
 publish: true
 ---
 
@@ -19,6 +19,14 @@ Two duties had to be chased every week: availability for rostering, and store up
 | Reduce friction   | Shift pings arrive with a one-tap button into the update form. The reminder is also the doorway.                                            |
 | Read the field    | Updates become a daily department report: coverage, wins, signals, and alerts.                                                              |
 
+## What this project teaches
+
+| Lesson                          | Why it matters                                                        |
+| ------------------------------- | --------------------------------------------------------------------- |
+| Accountability can feel lighter | Rewards and team progress reduce the need for constant chasing.       |
+| Fairness needs data rules       | Scoring must reflect real roster patterns, not raw submission counts. |
+| The reminder is the interface   | The best next action should appear exactly when the user needs it.    |
+
 ## After
 
 - Launched across three markets with availability, shift pings, store updates, treats, pets, and reporting live.
@@ -29,3 +37,10 @@ Two duties had to be chased every week: availability for rostering, and store up
 ## Under the hood
 
 Telegram bot, Mini App for pet and journal, dashboard for the department, one database with role separation, points ledger integrity rules, scheduled shift pings, and scheduled reports. Related patterns: [[wiki/telegram-bots/index|Telegram Bot Engineering]].
+
+## Read next
+
+- [[playbooks/telegram-bots|Telegram Bot Playbook]]
+- [[topics/ai-automation|AI & Automation]]
+- [[projects/cultivaite|CultivAIte]]
+- [[projects/index|Projects]]

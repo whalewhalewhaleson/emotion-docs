@@ -1,24 +1,39 @@
 ---
 title: eMotion Docs
-description: The AI tools we built for TC Acoustic, and the practical lessons from shipping them.
+description: Projects, topics, and playbooks from eMotion's work building practical AI tools and digital systems.
 publish: true
 ---
 
-We build custom AI tools for TC Acoustic: Telegram bots the field team already lives in, dashboards leadership actually reads, and AI layers that turn messy daily inputs into operational intelligence.
+eMotion Docs is a public library of the digital systems we build, the decisions behind them, and the lessons we keep reusing.
 
-This site documents the work plainly: what each tool solves, how it was built, what changed after launch, and the engineering lessons that carried forward.
+The goal is simple: make useful digital work easier to understand. Start with a project, explore a topic, or use a playbook when you are planning something similar.
 
-## The tools
+## Start here
 
-| Tool                                          | What it does                                                                            |
-| --------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [[projects/store-visit-app\|Store Visit App]] | Field reports in minutes, followed by a daily AI brief for leadership.                  |
-| [[projects/signal-log-bot\|Signal Log Bot]]   | One free-text log for workflow friction; weekly AI clustering finds recurring problems. |
-| [[projects/cultivaite\|CultivAIte]]           | Weekly reflection, peer recognition, and a shared garden for campaign participation.    |
-| [[projects/promotchi\|Promotchi]]             | Retail promoter accountability through timely submissions, treats, and a virtual pet.   |
+| Section                              | Use it when you want to...                                      |
+| ------------------------------------ | --------------------------------------------------------------- |
+| [[projects/index\|Projects]]         | See real builds, product choices, and operating lessons.        |
+| [[topics/ai-automation\|Topics]]     | Understand the ideas behind AI, automation, bots, and workflow. |
+| [[playbooks/claude-code\|Playbooks]] | Follow practical methods we use to build and improve systems.   |
+| [[latest\|Latest]]                   | Catch up on new and updated pages.                              |
 
-## The engineering
+## Current map
 
-Start with [[wiki/telegram-bots/index|Telegram Bot Engineering]] for the reusable patterns: surfaces, authentication, platform limits, conversation design, Mini Apps, and production operations.
+| Lens      | Pages to read first                                                                                                                                |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Projects  | [[projects/store-visit-app\|SVA]], [[projects/signal-log-bot\|Signal Log]], [[projects/cultivaite\|CultivAIte]], [[projects/promotchi\|Promotchi]] |
+| Topics    | [[topics/ai-automation\|AI & Automation]]                                                                                                          |
+| Playbooks | [[playbooks/claude-code\|Claude Code]], [[playbooks/telegram-bots\|Telegram Bots]]                                                                 |
 
-Because "we build custom AI tools" is easy to claim. The useful proof is the work: the choices, trade-offs, failures, and patterns that survived production.
+## How to read this site
+
+Each page is designed to answer one thing clearly, then point you somewhere useful next.
+
+| If you are...         | Start with...                                      |
+| --------------------- | -------------------------------------------------- |
+| Exploring our work    | [[projects/index\|Projects]]                       |
+| Learning what matters | [[topics/ai-automation\|AI & Automation]]          |
+| Planning a build      | [[playbooks/claude-code\|Claude Code Playbook]]    |
+| Building a bot        | [[playbooks/telegram-bots\|Telegram Bot Playbook]] |
+
+The proof is the work: the choices, trade-offs, failures, and patterns that survived production.

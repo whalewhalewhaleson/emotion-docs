@@ -1,6 +1,6 @@
 ---
 title: "CultivAIte: A Culture Campaign That Runs Itself"
-description: "A quarterly reflection campaign rebuilt as a Telegram bot: weekly reflections, peer recognition, and a shared garden."
+description: "A Telegram-based culture campaign with weekly reflections, peer recognition, automated approvals, and a shared garden."
 publish: true
 ---
 
@@ -21,6 +21,14 @@ CultivAIte is a weekly reflection campaign run by a Telegram bot, with peer reco
 | Shared garden        | Every person is a plant that grows with participation. Streaks, excusals, and team averages are handled fairly, not manually.                                                  |
 | Personal journal     | Staff can see reflections, shout-outs, and where points came from in a Mini App.                                                                                               |
 
+## What this project teaches
+
+| Lesson                           | Why it matters                                                              |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| Automation should protect intent | The system removes admin work without making recognition feel cold.         |
+| Progress needs a surface         | A shared visual layer makes participation easier to understand at a glance. |
+| Fairness must be designed        | Deadlines, excusals, and streaks need rules before the campaign scales.     |
+
 ## After
 
 Weekly participation reached the whole company. Peer recognition more than tripled over the campaign. The team running the campaign moved from manual production work to review-and-click operations.
@@ -28,3 +36,10 @@ Weekly participation reached the whole company. Peer recognition more than tripl
 ## Under the hood
 
 Telegram bot, staff Mini App, campaign dashboard, points ledger, custom week boundaries, per-person deadline offsets, and streak-preserving excusal rules. The bot engineering lessons sit in the [[wiki/telegram-bots/index|Telegram bot wiki]].
+
+## Read next
+
+- [[topics/ai-automation|AI & Automation]]
+- [[playbooks/telegram-bots|Telegram Bot Playbook]]
+- [[playbooks/claude-code|Claude Code Playbook]]
+- [[projects/promotchi|Promotchi]]

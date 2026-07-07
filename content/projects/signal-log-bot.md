@@ -1,6 +1,6 @@
 ---
 title: "Signal Log Bot: Making Firefighting Visible"
-description: One free-text Telegram message to log workflow friction; weekly AI clustering turns incidents into named problems.
+description: A lightweight Telegram logging system where weekly AI clustering turns workflow friction into named operational problems.
 publish: true
 ---
 
@@ -28,6 +28,14 @@ No dropdowns at capture. No impact matrix. The bot wins the logging habit first;
 | Shape     | A consistent taxonomy of disruption types, applied after the fact so users never argue with categories. |
 | Substance | Specific recurring failures, with evidence linked back to the underlying signals and comment threads.   |
 
+## What this project teaches
+
+| Lesson                    | Why it matters                                                               |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Win the habit first       | If capture is too heavy, the intelligence layer never gets enough signal.    |
+| Classify after capture    | AI can structure the mess without slowing the person reporting it.           |
+| Reports need named issues | Leadership can act on recurring problems, not a pile of isolated complaints. |
+
 ## After
 
 - Company-wide rollout, with department digests landing before function meetings.
@@ -38,3 +46,10 @@ No dropdowns at capture. No impact matrix. The bot wins the logging habit first;
 ## Under the hood
 
 Telegram bot for capture, Mini App and dashboard for reading, one database as source of truth, scheduled AI routine for the weekly report. Capture stays dumb and fast; interpretation is centralised. Related lessons: [[wiki/telegram-bots/index|Telegram Bot Engineering]].
+
+## Read next
+
+- [[topics/ai-automation|AI & Automation]]
+- [[playbooks/telegram-bots|Telegram Bot Playbook]]
+- [[playbooks/claude-code|Claude Code Playbook]]
+- [[projects/index|Projects]]

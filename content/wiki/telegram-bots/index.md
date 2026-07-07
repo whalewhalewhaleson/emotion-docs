@@ -1,10 +1,12 @@
 ---
 title: Telegram Bot Engineering
-description: Practical patterns from shipping production Telegram bots for business operations.
+description: Engineering notes from shipping production Telegram bots for business operations.
 publish: true
 ---
 
 Every operational tool here runs through Telegram because that is where the teams already work. This wiki captures the patterns that survived real usage.
+
+For a higher-level planning guide, start with the [[playbooks/telegram-bots|Telegram Bot Playbook]]. For the broader automation lens, read [[topics/ai-automation|AI & Automation]].
 
 ## The pages
 
@@ -20,3 +22,10 @@ Every operational tool here runs through Telegram because that is where the team
 ## Philosophy
 
 A business bot is a **capture device** first. Make the recurring duty cheap enough that people actually do it. Dashboards, intelligence, and gamification only work after the habit exists.
+
+## Related projects
+
+- [[projects/store-visit-app|Store Visit App]]
+- [[projects/signal-log-bot|Signal Log Bot]]
+- [[projects/cultivaite|CultivAIte]]
+- [[projects/promotchi|Promotchi]]
