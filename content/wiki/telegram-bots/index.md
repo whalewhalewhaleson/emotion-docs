@@ -4,8 +4,6 @@ description: Practical patterns from shipping production Telegram bots for busin
 publish: true
 ---
 
-# Telegram Bot Engineering
-
 Every operational tool here runs through Telegram because that is where the teams already work. This wiki captures the patterns that survived real usage.
 
 ## The pages

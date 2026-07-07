@@ -4,8 +4,6 @@ description: One free-text Telegram message to log workflow friction; weekly AI 
 publish: true
 ---
 
-# Signal Log Bot
-
 A person logs a workflow disruption in plain text. A weekly AI pass turns the pile into named, recurring problems leadership can act on.
 
 ## Before

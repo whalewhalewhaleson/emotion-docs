@@ -1,10 +1,8 @@
 ---
-title: Show Your Work
+title: eMotion Docs
 description: The AI tools we built for TC Acoustic, and the practical lessons from shipping them.
 publish: true
 ---
-
-# Show Your Work
 
 We build custom AI tools for TC Acoustic: Telegram bots the field team already lives in, dashboards leadership actually reads, and AI layers that turn messy daily inputs into operational intelligence.
 

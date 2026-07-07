@@ -222,9 +222,10 @@ async function setupExplorer(currentSlug: FullSlug) {
       explorerUl.scrollTop = parseInt(scrollTop)
     } else {
       // try to scroll to the active element if it exists
+      // block: "nearest" so a visible item never scrolls the page itself
       const activeElement = explorerUl.querySelector(".active")
       if (activeElement) {
-        activeElement.scrollIntoView({ behavior: "smooth" })
+        activeElement.scrollIntoView({ behavior: "smooth", block: "nearest" })
       }
     }
 

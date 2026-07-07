@@ -4,8 +4,6 @@ description: Input controls, multi-step flows, and bot copy that works in one-se
 publish: true
 ---
 
-# Conversation Design
-
 A business bot is usually a form wearing a chat costume. The controls matter.
 
 | Control            | Best for                                     | Avoid when                             |

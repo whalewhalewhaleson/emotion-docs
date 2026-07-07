@@ -4,8 +4,6 @@ description: Who is behind this site and why it exists.
 publish: true
 ---
 
-# About
-
 This site is maintained by the team behind **eMotion**, the custom-AI-solutions practice that grew out of TC Acoustic, a consumer-audio distributor in Southeast Asia.
 
 The question behind the work was simple: could a distribution business build its own software faster than buying enterprise tools that fit nobody?

@@ -4,8 +4,6 @@ description: Bot chat, Mini App, or web dashboard — match the surface to the c
 publish: true
 ---
 
-# Choosing Your Surface
-
 Pick by **cognitive mode**, not by what is easiest to build.
 
 | Surface       | Feels like              | Best for                                               |

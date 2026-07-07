@@ -4,8 +4,6 @@ description: Deploy gotchas, common bot pitfalls, and AI architecture around Tel
 publish: true
 ---
 
-# Running in Production
-
 The gap between "the bot works" and "the bot runs daily operations" is mostly deployment, state, and boring safeguards.
 
 ## Deploy gotchas

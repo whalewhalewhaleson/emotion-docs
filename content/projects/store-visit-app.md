@@ -4,8 +4,6 @@ description: A Telegram-native store visit tool that freed channel managers from
 publish: true
 ---
 
-# Store Visit App
-
 Channel managers log structured store visits from Telegram in minutes. An AI layer reads every report overnight and briefs leadership each morning.
 
 ## Before

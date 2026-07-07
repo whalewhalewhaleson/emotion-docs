@@ -1,4 +1,193 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
+
+/* ==========================================================================
+   eMotion Docs theme — clean white/black, blue accent, Inter.
+   Approved via _mockups/redesign-v3.html (2026-07-07):
+   - logo lives at the top of the sticky left nav panel
+   - content pushes to the top, title level with the nav
+   - single bottom control bar (search / graph / reader / theme), popups open upward
+   - reader view fades sidebars in place — no reflow — and keeps breadcrumbs
+   ========================================================================== */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.65;
+  // keep content clear of the fixed bottom bar
+  padding-bottom: 6.5rem;
+}
+
+/* ---------- layout: wider frame, navs pushed to the edges ---------- */
+.page {
+  max-width: 1600px;
+  padding: 0 0.5rem;
+}
+
+@media all and ($desktop) {
+  .page > #quartz-body {
+    grid-template-columns: 17rem auto 15rem;
+    column-gap: 2.5rem;
+  }
+}
+
+.page > #quartz-body {
+  & .sidebar {
+    padding: 2.2rem 1.5rem 2rem 1.5rem;
+    gap: 1.4rem;
+  }
+
+  // content pushes all the way up: title row sits level with the nav panel
+  & .page-header {
+    margin: 2.2rem 0 0 0;
+  }
+}
+
+/* ---------- left panel: logo as part of the sticky nav ---------- */
+.page-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+
+  & a {
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--secondary);
+      flex-shrink: 0;
+    }
+  }
+}
+
+.explorer {
+  font-size: 0.84rem;
+
+  // hide the "Explorer" toggle header on desktop; the tree speaks for itself
+  @media all and not ($mobile) {
+    & > .explorer-toggle:not(.mobile-explorer),
+    & > button.title-button,
+    & h2 {
+      display: none;
+    }
+  }
+
+  & .explorer-content ul li > a {
+    color: var(--darkgray);
+    display: block;
+    padding: 0.22rem 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 7px;
+    font-weight: 400;
+    transition:
+      background 0.12s ease,
+      color 0.12s ease;
+
+    &:hover {
+      background: var(--highlight);
+      color: var(--dark);
+    }
+
+    &.active {
+      background: var(--highlight);
+      color: var(--secondary);
+      font-weight: 600;
+    }
+  }
+
+  // folder labels as small uppercase section headers
+  & .folder-container {
+    margin-top: 0.4rem;
+
+    & div > a,
+    & div > button {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: var(--gray);
+
+      &:hover {
+        color: var(--dark);
+      }
+    }
+  }
+}
+
+/* ---------- right panel: on-this-page ---------- */
+button.toc-header {
+  cursor: default;
+  pointer-events: none;
+
+  & h3 {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--gray);
+  }
+
+  & .fold {
+    display: none;
+  }
+}
+
+ul.toc-content.overflow {
+  border-left: 1px solid var(--lightgray);
+  padding-left: 0;
+
+  & > li > a {
+    display: block;
+    padding: 0.18rem 0 0.18rem 0.8rem;
+    margin-left: -1px;
+    border-left: 2px solid transparent;
+    font-size: 0.82rem;
+    opacity: 0.6;
+
+    &.in-view {
+      opacity: 1;
+      color: var(--secondary);
+      border-left-color: var(--secondary);
+      font-weight: 600;
+    }
+  }
+}
+
+/* ---------- article ---------- */
+.breadcrumb-container {
+  margin-top: 0;
+  font-size: 0.78rem;
+
+  & a {
+    color: var(--gray);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-top: 0.9rem;
+}
+
+.content-meta {
+  font-size: 0.82rem;
+  color: var(--gray);
+  margin-top: 0.35rem;
+}
 
 .page article {
   line-height: 1.62;
@@ -12,6 +201,7 @@
     margin-top: 2.25rem;
     margin-bottom: 0.65rem;
     font-size: 1.25rem;
+    letter-spacing: -0.015em;
   }
 
   > p {
@@ -24,5 +214,307 @@
 
   table {
     font-size: 0.94rem;
+  }
+}
+
+// title row (ArticleTitle + CopyPage flex)
+.page-header .flex-component {
+  align-items: flex-start;
+}
+
+/* ---------- copy page control ---------- */
+.copy-page {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 2.1rem;
+  margin-top: 1.1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 9px;
+  background: var(--light);
+  color: var(--darkgray);
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  & button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+    height: 100%;
+    border: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0 0.7rem;
+
+    &:hover {
+      background: var(--highlight);
+      color: var(--dark);
+    }
+  }
+
+  & .copy-page-main {
+    border-radius: 8px 0 0 8px;
+  }
+
+  & .copy-page-caret {
+    padding: 0 0.45rem;
+    border-left: 1px solid var(--lightgray);
+    border-radius: 0 8px 8px 0;
+  }
+
+  & .copy-page-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    min-width: 11rem;
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    z-index: 40;
+
+    &.open {
+      display: block;
+    }
+
+    & button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.45rem 0.6rem;
+      border-radius: 7px;
+
+      &:hover {
+        background: var(--highlight);
+        color: var(--secondary);
+      }
+    }
+  }
+}
+
+/* ---------- footer ---------- */
+footer.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0 2rem 0;
+  font-size: 0.78rem;
+  color: var(--gray);
+
+  & a {
+    color: var(--gray);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+/* ==========================================================================
+   Bottom bar — the single control surface
+   ========================================================================== */
+/* NOTE: no transform / backdrop-filter / filter on .bottom-bar or its inner —
+   they'd become the containing block for the fixed-position search overlay and
+   graph popover nested inside, clipping them to the pill. Centered via margins. */
+.bottom-bar {
+  position: fixed;
+  bottom: 1.1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: min(600px, calc(100vw - 2rem));
+  z-index: 900;
+}
+
+.bottom-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 9px;
+  border: 1px solid var(--lightgray);
+  border-radius: 16px;
+  background: var(--light);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bb-divider {
+  width: 1px;
+  height: 22px;
+  background: var(--lightgray);
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.bottom-bar .bb-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--darkgray);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: static;
+  transition: background 0.15s ease;
+
+  &:hover {
+    background: var(--highlight);
+    color: var(--secondary);
+  }
+
+  // stock darkmode/readermode scss sizes these at 20px absolute — undo that
+  & svg {
+    position: static;
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+  }
+}
+
+/* search inside the bar: the button masquerades as an input */
+.bottom-bar .search {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none;
+
+  & > .search-button {
+    width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background: var(--highlight);
+    }
+
+    & svg {
+      width: 15px;
+      min-width: 15px;
+      margin: 0 0.5rem 0 0.2rem;
+
+      & .search-path {
+        stroke: var(--gray);
+      }
+    }
+
+    & > p {
+      color: var(--gray);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+
+    &::after {
+      content: "⌘K";
+      margin-left: auto;
+      font-size: 0.66rem;
+      color: var(--gray);
+      border: 1px solid var(--lightgray);
+      border-radius: 5px;
+      padding: 1px 6px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+/* search overlay: anchored to the bottom bar, results pop UPWARD */
+.search > .search-container {
+  & > .search-space {
+    width: min(880px, 92vw);
+    margin: 0;
+    position: fixed;
+    bottom: 5.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse; // input at the bottom, results rise above it
+    gap: 0.55rem;
+
+    & > * {
+      margin-bottom: 0;
+      border-radius: 13px;
+    }
+
+    & > input {
+      padding: 0.75em 1em;
+      font-size: 0.95rem;
+      border: 1px solid var(--lightgray);
+    }
+
+    & > .search-layout {
+      border-radius: 13px;
+      overflow: hidden;
+
+      & > div {
+        height: min(52vh, 30rem);
+      }
+    }
+  }
+}
+
+/* knowledge graph popover: same upward anchoring */
+.bottom-bar .global-graph-outer {
+  position: fixed;
+  contain: layout;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  & > .global-graph-container {
+    position: fixed;
+    bottom: 5.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(880px, 92vw);
+    height: min(60vh, 34rem);
+    box-sizing: border-box;
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 13px;
+    box-shadow: 0 14px 50px rgba(27, 33, 48, 0.12);
+  }
+}
+
+/* reader mode: stock behavior already fades sidebars in place (no reflow) and
+   breadcrumbs live in the center column, so they stay. Just mark the toggle. */
+:root[reader-mode="on"] .bottom-bar .readermode {
+  background: var(--highlight);
+  color: var(--secondary);
+}
+
+/* mobile: tighten the bar */
+@media all and ($mobile) {
+  .bottom-bar {
+    width: calc(100vw - 1.2rem);
+  }
+
+  .bottom-bar .search > .search-button::after {
+    display: none;
+  }
+
+  .search > .search-container > .search-space {
+    bottom: 5.2rem;
   }
 }

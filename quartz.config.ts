@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Show Your Work",
+    pageTitle: "eMotion Docs",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -21,31 +21,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Inter",
+        body: "Inter",
         code: "IBM Plex Mono",
       },
+      // clean white/black with a blue accent (see _mockups/redesign-v3.html)
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#ffffff",
+          lightgray: "#e8e8e8",
+          gray: "#9a9da6",
+          darkgray: "#2e2f36",
+          dark: "#17181c",
+          secondary: "#2563eb",
+          tertiary: "#1d4ed8",
+          highlight: "rgba(37, 99, 235, 0.08)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#0f0f11",
+          lightgray: "#26262c",
+          gray: "#64656e",
+          darkgray: "#c9cacf",
+          dark: "#ededf0",
+          secondary: "#6ea2f7",
+          tertiary: "#8ab7ff",
+          highlight: "rgba(110, 162, 247, 0.12)",
           textHighlight: "#b3aa0288",
         },
       },
@@ -89,6 +90,8 @@ const config: QuartzConfig = {
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
+      // raw markdown at <slug>.md for the Copy page control
+      Plugin.RawMarkdown(),
     ],
   },
 }

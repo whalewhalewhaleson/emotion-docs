@@ -4,8 +4,6 @@ description: "Telegram as your identity layer: Login Widget, Mini App initData, 
 publish: true
 ---
 
-# Authentication & Access
-
 For internal tools whose users already use your bot, Telegram can be the identity layer. No password reset flow. No separate account system.
 
 ## Two doors
